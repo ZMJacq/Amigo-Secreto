@@ -3,8 +3,14 @@ let listaAmigos = [];
 
 function agregarAmigo() {
     let agregarAmigo = document.getElementById("amigo");
-    let listaAmigos = agregarAmigo.value;
+    let Amigos = agregarAmigo.value;
 
-    console.log (listaAmigos);
+    // También se puede colocar un =="" ó un == False
+    if (!Amigos) {
+        alert("Ingresa el nombre de un amigo");
+        return;
+    }
+    listaAmigos.push(Amigos);
+    agregarAmigo.value = "";
     
-}
+};
