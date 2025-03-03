@@ -12,6 +12,7 @@ function agregarAmigo() {
     }
     listaAmigos.push(amigos);
     agregarAmigo.value = "";
+    agregarAmigo.focus();
     mostrarAmigo()
 };
 
