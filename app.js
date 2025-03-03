@@ -37,5 +37,8 @@ function sortearAmigo() {
     let amigoEnSorteo = listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
     let amigoSecreto = document.getElementById("resultado");
     amigoSecreto.innerHTML = (`El amigo secreto es: ${amigoEnSorteo}`);
+
+// Limpiador de lista despues de mostrar el amigo secreto.
+    let limpiarArray = document.getElementById("listaAmigos");
+    limpiarArray.innerHTML = "";
     };
-    
